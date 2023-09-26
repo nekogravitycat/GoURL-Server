@@ -1,0 +1,18 @@
+services:
+  gourl:
+    image: nekogravitycat/gourl:latest
+    container_name: gourl
+    restart: on-failure
+    expose:
+      - "5000"
+    volumes:
+      - ./data:/app/data
+  gourl-cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: gourl-cloudflared
+    restart: on-failure
+    command: tunnel run
+    env_file:
+      - ./env/cloudflared.env
+    depends_on:
+      - gourl
