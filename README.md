@@ -1,7 +1,7 @@
 # GoURL
 
 ## Overview
-GoURL is a project designed to simplify URL redirection using Docker and Cloudflare Tunnel. GoURL-Server is the sub-project that provides easy deployment for the main GoURL project.
+GoURL is a project designed to simplify URL redirection using Docker and Cloudflare Tunnel. GoURL-Server serves as a complementary sub-project designed for effortless deployment.
 
 ## Project Structure
 GoURL-Server project is organized as follows:
