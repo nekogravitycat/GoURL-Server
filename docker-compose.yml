@@ -4,7 +4,7 @@ services:
     container_name: gourl
     restart: on-failure
     expose:
-      - "5000"
+      - "8080"
     volumes:
       - ./data:/app/data
   gourl-cloudflared:
