@@ -1,2 +1,4 @@
 url.csv
 cloudflared.env
+
+.DS_Store
